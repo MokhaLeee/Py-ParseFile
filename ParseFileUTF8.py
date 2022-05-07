@@ -13,9 +13,9 @@ def Parse(line):
 	
 	res = line.strip('\n')
 	res = res.replace('[X]',	'\0')
-	res = res.replace('[NL]',	'1')
-	res = res.replace('[2NL]',	'2')
-	res = res.replace('[A]',	'3')
+	res = res.replace('[NL]',	'\1')
+	res = res.replace('[2NL]',	'\2')
+	res = res.replace('[A]',	'\3')
 	res = res.replace('[....]',	'\4')
 	res = res.replace('[.....]',	'\5')
 	res = res.replace('[......]',	'\6')

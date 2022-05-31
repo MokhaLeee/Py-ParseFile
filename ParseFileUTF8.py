@@ -72,6 +72,8 @@ def Parse(line):
 	res = res.replace(b'[SetName]', b'\x23\x80')
 	res = res.replace(b'[ToggleColorInvert]', b'\x25\x80')
 	
+	res = res.replace(b'[0xFF]', b'\xFF\xFF')
+	
 	res = res.replace(b'[0x1]', b'\x01')
 	res = res.replace(b'[0x01]', b'\x01')
 	res = res.replace(b'[0x2]', b'\x02')
